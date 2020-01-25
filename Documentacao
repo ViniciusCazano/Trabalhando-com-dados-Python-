@@ -1,0 +1,49 @@
+Todos os arquivos, tanto .JSON quanto .py devem estar no mesmo diretório.
+
+Questão 01: Recupera e converte os dados
+  Nome:Questao-01_RecuperacoDeDados
+  Funções{
+    Nome: Questao-01_Funcao01_Corrige nome corrompido
+      Explicação:
+        *Recebe como parâmetro, um produto do dicionário e salva ela em uma variável.
+        *Converte os itens corrompidos presentes no nome e salva na variavel.
+        *Retorna a variável.
+
+    Nome: Questao-01_Funcao02_Corrige quantidade corrompida
+      Explicação:
+        *Recebe como parâmetro, um produto do dicionário.
+        *Pega o valor do produto presente na chave 'price' e salva nela mesma convertendo para float.
+        *Retorna o parâmetro recebido.
+
+    Nome: Questao-01_Funcao03_Corrige preco corrompido
+      Explicação:
+        *Recebe como parâmetro um produto do dicionário.
+        *Cria em uma variável string um modelo com as mesmas chaves do dicionário.
+        *Cria um objeto JSON com a variável.
+        *Popula o valor do objeto criado com os mesmos valor do produto recebido pelo parâmetro.
+        *Retorna o objeto criado.
+  }
+          
+Questão 02: Válida os dados convertidos
+  Nome: Questao-02_ValidacaoDeDados
+  Funções{
+    Nome: Questao-02_Funcao01_Mostra nomes ordenados
+      Explicação:
+        *Recebe como parâmetro um dicionário.
+        *Pesquisa nesse dicionário e salva as categorias presentes no produto, com a regra de que se o valor da chave 'category' for diferente de algum outro valor salvo na lista categoria ele salva na lista.
+        *Ordena a lista que foi salva as categorias em ordem alfabética e salva a ordenação nela mesmo.
+        *Percorre a lista de categoria ja ordenada, fazendo com que em cada categoria ele percorre todos os produtos, com a regra de que se categoria for igual ao valor da chave 'category' do produto analisado, ele salva em outra lista o valor do 'id' do produto. 
+        *Na última passada da lista dos produtos ele ordena a lista que foi salvo os  valores da chave 'id' em ordem crescente, e sai varrendo todos os produtos procurando cada id salvo na lista ja ordenada, e caso seja igual printa o valor da chave 'name' na tela.
+
+    Nome: Questao-02_Funcao02_Soma estoque por categoria
+      Explicação:
+        *Recebe como parâmetro um dicionário.
+        *Pesquisa nesse dicionário e salva as categorias presentes no produto, com a regra de que se o valor da chave 'category' for diferente de algum outro valor salvo na lista categoria, ele salva na lista.
+        *Percorre a lista de categoria ja ordenada criando um variavel soma, onde ela zera em cada categoria.
+        *Em cada categoria ele percorre todos os produtos, com a regra de que se categoria for igual ao valor da chave 'category' do produto analisado, ele multiplica o valor das chaves 'quantity' e 'price', somando o valor do resultado em uma variavel.
+        *Na ultima passada da lista de produtos ele printa na tela a categoria e o valor da soma.
+  }
+    
+
+
+
